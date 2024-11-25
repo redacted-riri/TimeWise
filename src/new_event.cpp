@@ -188,6 +188,8 @@ void NewEvent::convertICal(char* name, char* locate, int* shour, int* sminute, i
     /* Create a string from our calendar and send it to stdout
     printf("%s", icalcomponent_as_ical_string(cal));
     */
+
+    // Test function to write out
     FILE* file = fopen("event_details.txt", "w");
     if (file == NULL) {
         printf("Error opening file for writing\n");
