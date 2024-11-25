@@ -5,7 +5,7 @@
 #include "imgui_impl_opengl3.h"
 #include <stdio.h>
 #include "new_event.h"
-
+#include "ical.h"
 bool ImportCalendar::openImport = false;
 
 void ImportCalendar::drawImport() {
@@ -22,7 +22,7 @@ void ImportCalendar::drawImport() {
 
         if (ImGui::Button("Import")) {
             // Importing actions
-
+            // ICal::parseICal(linkical);
             // Close popup
             ImGui::CloseCurrentPopup();
             ImportCalendar::setImport(false);
